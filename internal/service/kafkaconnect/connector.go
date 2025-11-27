@@ -64,9 +64,8 @@ func resourceConnector() *schema.Resource {
 							Elem: &schema.Resource{
 								Schema: map[string]*schema.Schema{
 									"max_worker_count": {
-										Type:         schema.TypeInt,
-										Required:     true,
-										ValidateFunc: validation.IntBetween(1, 10),
+										Type:     schema.TypeInt,
+										Required: true,
 									},
 									"mcu_count": {
 										Type:         schema.TypeInt,
@@ -75,9 +74,8 @@ func resourceConnector() *schema.Resource {
 										ValidateFunc: validation.IntInSlice([]int{1, 2, 4, 8}),
 									},
 									"min_worker_count": {
-										Type:         schema.TypeInt,
-										Required:     true,
-										ValidateFunc: validation.IntBetween(1, 10),
+										Type:     schema.TypeInt,
+										Required: true,
 									},
 									"scale_in_policy": {
 										Type:     schema.TypeList,
@@ -128,9 +126,8 @@ func resourceConnector() *schema.Resource {
 										ValidateFunc: validation.IntInSlice([]int{1, 2, 4, 8}),
 									},
 									"worker_count": {
-										Type:         schema.TypeInt,
-										Required:     true,
-										ValidateFunc: validation.IntBetween(1, 10),
+										Type:     schema.TypeInt,
+										Required: true,
 									},
 								},
 							},
