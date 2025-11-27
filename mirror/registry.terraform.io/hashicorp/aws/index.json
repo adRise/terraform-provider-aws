@@ -1,11 +1,6 @@
 {
   "versions": {
-    "5.60.1": {
-      "protocols": ["5.0"],
-      "platforms": [
-        "darwin_arm64"
-      ]
-    }
+    "5.60.1": {}
   }
 }
 
