@@ -3,7 +3,7 @@
     "darwin_arm64": {
       "url": "https://github.com/adRise/terraform-provider-aws/releases/download/v5.60.1/terraform-provider-aws_5.60.1_darwin_arm64.zip",
       "hashes": [
-        "h1:jMoEUkYz6XUPiMk7bRDou3bZiOxObXOTMNA5R964BFs="
+        "sha256:8cca04524633e9750f88c93b6d10e8bb76d988ec4e6d739330d03947deb8045b"
       ]
     }
   }
