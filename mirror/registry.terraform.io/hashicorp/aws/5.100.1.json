@@ -1,0 +1,9 @@
+{
+  "archives": {
+    "darwin_arm64": {
+      "url": "https://github.com/adRise/terraform-provider-aws/releases/download/v5.100.1/terraform-provider-aws_5.100.1_darwin_arm64.zip",
+      "hashes": []
+    }
+  }
+}
+
