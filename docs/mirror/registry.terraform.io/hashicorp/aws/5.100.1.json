@@ -3,6 +3,58 @@
     "darwin_arm64": {
       "url": "https://github.com/adRise/terraform-provider-aws/releases/download/v5.100.1/terraform-provider-aws_5.100.1_darwin_arm64.zip",
       "hashes": []
+    },
+    "darwin_amd64": {
+      "url": "https://github.com/adRise/terraform-provider-aws/releases/download/v5.100.1/terraform-provider-aws_5.100.1_darwin_amd64.zip",
+      "hashes": []
+    },
+    "freebsd_386": {
+      "url": "https://github.com/adRise/terraform-provider-aws/releases/download/v5.100.1/terraform-provider-aws_5.100.1_freebsd_386.zip",
+      "hashes": []
+    },
+    "freebsd_amd64": {
+      "url": "https://github.com/adRise/terraform-provider-aws/releases/download/v5.100.1/terraform-provider-aws_5.100.1_freebsd_amd64.zip",
+      "hashes": []
+    },
+    "freebsd_arm": {
+      "url": "https://github.com/adRise/terraform-provider-aws/releases/download/v5.100.1/terraform-provider-aws_5.100.1_freebsd_arm.zip",
+      "hashes": []
+    },
+    "linux_386": {
+      "url": "https://github.com/adRise/terraform-provider-aws/releases/download/v5.100.1/terraform-provider-aws_5.100.1_linux_386.zip",
+      "hashes": []
+    },
+    "linux_amd64": {
+      "url": "https://github.com/adRise/terraform-provider-aws/releases/download/v5.100.1/terraform-provider-aws_5.100.1_linux_amd64.zip",
+      "hashes": []
+    },
+    "linux_arm": {
+      "url": "https://github.com/adRise/terraform-provider-aws/releases/download/v5.100.1/terraform-provider-aws_5.100.1_linux_arm.zip",
+      "hashes": []
+    },
+    "linux_arm64": {
+      "url": "https://github.com/adRise/terraform-provider-aws/releases/download/v5.100.1/terraform-provider-aws_5.100.1_linux_arm64.zip",
+      "hashes": []
+    },
+    "openbsd_386": {
+      "url": "https://github.com/adRise/terraform-provider-aws/releases/download/v5.100.1/terraform-provider-aws_5.100.1_openbsd_386.zip",
+      "hashes": []
+    },
+    "openbsd_amd64": {
+      "url": "https://github.com/adRise/terraform-provider-aws/releases/download/v5.100.1/terraform-provider-aws_5.100.1_openbsd_amd64.zip",
+      "hashes": []
+    },
+    "openbsd_arm": {
+      "url": "https://github.com/adRise/terraform-provider-aws/releases/download/v5.100.1/terraform-provider-aws_5.100.1_openbsd_arm.zip",
+      "hashes": []
+    },
+    "windows_386": {
+      "url": "https://github.com/adRise/terraform-provider-aws/releases/download/v5.100.1/terraform-provider-aws_5.100.1_windows_386.zip",
+      "hashes": []
+    },
+    "windows_amd64": {
+      "url": "https://github.com/adRise/terraform-provider-aws/releases/download/v5.100.1/terraform-provider-aws_5.100.1_windows_amd64.zip",
+      "hashes": []
     }
   }
 }
