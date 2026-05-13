@@ -28,6 +28,12 @@ jobs:
       ts: ${{ steps.message.outputs.ts }}
       version: ${{ steps.registry-ingest.outputs.version }}
     steps:
+      - name: Harden the runner
+        uses: step-security/harden-runner@a5ad31d6a139d249332a2605b85202e8c0b78450 # v2.19.1
+        with:
+          use-policy-store: true
+          api-key: ${{ secrets.STEP_SECURITY_API_KEY }}
+
       - name: Get Latest GitHub Release
         if: inputs.version == ''
         id: github-release
@@ -208,6 +214,12 @@ jobs:
         os: [ubuntu-latest, ubuntu-24.04-arm, windows-latest, macOS-latest]
     runs-on: ${{ matrix.os }}
     steps:
+      - name: Harden the runner
+        uses: step-security/harden-runner@a5ad31d6a139d249332a2605b85202e8c0b78450 # v2.19.1
+        with:
+          use-policy-store: true
+          api-key: ${{ secrets.STEP_SECURITY_API_KEY }}
+
       - name: Add Status Update Message in Thread
         id: thread-message
         uses: slackapi/slack-github-action@91efab103c0de0a537f72a35f6b8cda0ee76bf0a # v2.1.1

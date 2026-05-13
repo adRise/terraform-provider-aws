@@ -30,6 +30,12 @@ jobs:
     container:
       image: "semgrep/semgrep:1.110.0"
     steps:
+      - name: Harden the runner
+        uses: step-security/harden-runner@a5ad31d6a139d249332a2605b85202e8c0b78450 # v2.19.1
+        with:
+          use-policy-store: true
+          api-key: ${{ secrets.STEP_SECURITY_API_KEY }}
+
       - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5.0.1
       - run: |
           semgrep --validate \
@@ -45,6 +51,12 @@ jobs:
     container:
       image: "semgrep/semgrep:1.110.0"
     steps:
+      - name: Harden the runner
+        uses: step-security/harden-runner@a5ad31d6a139d249332a2605b85202e8c0b78450 # v2.19.1
+        with:
+          use-policy-store: true
+          api-key: ${{ secrets.STEP_SECURITY_API_KEY }}
+
       - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5.0.1
       - run: |
           semgrep --quiet --test .ci/semgrep/
@@ -56,6 +68,12 @@ jobs:
     container:
       image: "semgrep/semgrep:1.110.0"
     steps:
+      - name: Harden the runner
+        uses: step-security/harden-runner@a5ad31d6a139d249332a2605b85202e8c0b78450 # v2.19.1
+        with:
+          use-policy-store: true
+          api-key: ${{ secrets.STEP_SECURITY_API_KEY }}
+
       - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5.0.1
       - run: |
           semgrep $SEMGREP_ARGS \
@@ -77,6 +95,12 @@ jobs:
       image: "semgrep/semgrep:1.110.0"
     if: (github.action != 'dependabot[bot]')
     steps:
+      - name: Harden the runner
+        uses: step-security/harden-runner@a5ad31d6a139d249332a2605b85202e8c0b78450 # v2.19.1
+        with:
+          use-policy-store: true
+          api-key: ${{ secrets.STEP_SECURITY_API_KEY }}
+
       - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5.0.1
       - run: semgrep --validate --config .ci/.semgrep-caps-aws-ec2.yml
       - run: semgrep $SEMGREP_ARGS --config .ci/.semgrep-caps-aws-ec2.yml
@@ -88,6 +112,12 @@ jobs:
       image: "semgrep/semgrep:1.110.0"
     if: (github.action != 'dependabot[bot]')
     steps:
+      - name: Harden the runner
+        uses: step-security/harden-runner@a5ad31d6a139d249332a2605b85202e8c0b78450 # v2.19.1
+        with:
+          use-policy-store: true
+          api-key: ${{ secrets.STEP_SECURITY_API_KEY }}
+
       - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5.0.1
       - run: semgrep --validate --config .ci/.semgrep-configs.yml
       - run: semgrep $SEMGREP_ARGS --config .ci/.semgrep-configs.yml
@@ -99,6 +129,12 @@ jobs:
       image: "semgrep/semgrep:1.110.0"
     if: (github.action != 'dependabot[bot]')
     steps:
+      - name: Harden the runner
+        uses: step-security/harden-runner@a5ad31d6a139d249332a2605b85202e8c0b78450 # v2.19.1
+        with:
+          use-policy-store: true
+          api-key: ${{ secrets.STEP_SECURITY_API_KEY }}
+
       - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5.0.1
       - run: semgrep --validate --config .ci/.semgrep-service-name0.yml
       - run: semgrep $SEMGREP_ARGS --config .ci/.semgrep-service-name0.yml
@@ -110,6 +146,12 @@ jobs:
       image: "semgrep/semgrep:1.110.0"
     if: (github.action != 'dependabot[bot]')
     steps:
+      - name: Harden the runner
+        uses: step-security/harden-runner@a5ad31d6a139d249332a2605b85202e8c0b78450 # v2.19.1
+        with:
+          use-policy-store: true
+          api-key: ${{ secrets.STEP_SECURITY_API_KEY }}
+
       - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5.0.1
       - run: semgrep --validate --config .ci/.semgrep-service-name1.yml
       - run: semgrep $SEMGREP_ARGS --config .ci/.semgrep-service-name1.yml
@@ -121,6 +163,12 @@ jobs:
       image: "semgrep/semgrep:1.110.0"
     if: (github.action != 'dependabot[bot]')
     steps:
+      - name: Harden the runner
+        uses: step-security/harden-runner@a5ad31d6a139d249332a2605b85202e8c0b78450 # v2.19.1
+        with:
+          use-policy-store: true
+          api-key: ${{ secrets.STEP_SECURITY_API_KEY }}
+
       - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5.0.1
       - run: semgrep --validate --config .ci/.semgrep-service-name2.yml
       - run: semgrep $SEMGREP_ARGS --config .ci/.semgrep-service-name2.yml
@@ -132,6 +180,12 @@ jobs:
       image: "semgrep/semgrep:1.110.0"
     if: (github.action != 'dependabot[bot]')
     steps:
+      - name: Harden the runner
+        uses: step-security/harden-runner@a5ad31d6a139d249332a2605b85202e8c0b78450 # v2.19.1
+        with:
+          use-policy-store: true
+          api-key: ${{ secrets.STEP_SECURITY_API_KEY }}
+
       - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5.0.1
       - run: semgrep --validate --config .ci/.semgrep-service-name3.yml
       - run: semgrep $SEMGREP_ARGS --config .ci/.semgrep-service-name3.yml
